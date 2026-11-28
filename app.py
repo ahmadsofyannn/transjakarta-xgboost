@@ -254,12 +254,12 @@ elif menu == "Prediksi Kepadatan Halte":
     label_sumber = (
         "Model `density_model.pkl`"
         if mode == "model"
-        else "Estimasi sementara (mode dummy)"
+        else ""
     )
     st.info(
         f"Diperkirakan ada **{est_count:.0f}** penumpang Tap-In di Halte"
         f" **{selected_stop}** pada hari **{selected_day_name}** jam"
-        f" **{selected_hour}:00** ({label_sumber})."
+        f" **{selected_hour}:00**"
     )
 
   st.subheader("Konteks Historis")
